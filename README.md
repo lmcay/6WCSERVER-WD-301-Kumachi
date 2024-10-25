@@ -11,7 +11,7 @@ This is a dynamic web app we made for Kumachi, a coffee and pastry shop, built u
    ```
 2. Turn on **mongod** located in:
    ```
-   C:\Program Files\MongoDB\Server\*Version Number*\bin
+   C:\Program Files\MongoDB\Server\Version Number\bin
    ```
 3. Navigate to the **backend** folder and start the server by running:
    ```
