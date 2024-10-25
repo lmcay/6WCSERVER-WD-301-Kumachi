@@ -1,0 +1,62 @@
+/* Main Confirmation Section */
+.hero__container {
+    margin: 0 auto;
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/confirmation-background.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__section__confirmation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    color: var(--primary-color);
+    margin-top: 2rem;
+}
+
+.coffee__pastries {
+    font-family: var(--font-family-1);
+    margin-bottom: 1rem;
+}
+
+.check {
+    display: flex;
+    justify-content: center; 
+    margin-top: 14rem;
+}
+
+.check img {
+    width: 80px; 
+    height: auto; 
+}
+
+.confirmation h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+    margin-bottom: 1rem;
+    font-family: var(--font-family-1);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.address, .gratitude{
+    text-align: center;
+    margin: 2rem;
+    padding-left: 9%;
+    padding-right: 9%;
+    font-size: 28px;
+    font-family: var(--font-family-1);
+}
+
+
+.gratitude{
+    margin-bottom: 14rem;
+}

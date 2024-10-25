@@ -1,0 +1,105 @@
+.order__container {
+    margin: 0 auto;
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/confirmation-background.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.order__section {
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+}
+.coffee__pastries {
+    font-family: var(--font-family-1);
+}
+
+.order__message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order__message h2 {
+    font-family: var(--font-family-1);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.order__message p {
+    font-family: var(--font-family-1);
+    text-align: center;
+    font-size: 25px;
+}
+
+.order__content {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.order__content img {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+.order__summary {
+    width: 50%;
+    margin: 5% auto 0 auto;
+    background-color: #28190e;
+    border-radius: 15px;
+}
+.order__summary h2 {
+    margin:1.5rem;
+    text-align: center;
+    color:var(--primary-color);
+    padding-top: 1.5rem;
+    font-style: var(--font-family-1);
+}
+
+
+.item__details p, .order__total p {
+    color:var(--primary-color);
+    font-family: var(--font-family-1);
+    font-size: 1.2rem;
+}
+.item img {
+    width: 250px;
+    height: 250px;
+    padding: 1rem;
+
+}
+.item {
+    display: flex;
+    align-items: center;
+    padding: 2em 5em;
+}
+.item__details {
+    flex: 1
+}
+
+.name__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.order__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 5em;
+    max-width: 100%;
+    border-top: 1px solid #fff;
+    font-size: 1.2rem;   
+}
+
