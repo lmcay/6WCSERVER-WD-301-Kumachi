@@ -9,15 +9,19 @@ This is a dynamic web app we made for Kumachi, a coffee and pastry shop, built u
    cd ../kumachi
    npm install
    ```
-2. Navigate to the **backend** folder and start the server by running:
+2. Turn on **mongod** located in:
+   ```
+   C:\Program Files\MongoDB\Server\*Version Number*\bin
+   ```
+3. Navigate to the **backend** folder and start the server by running:
    ```
    node index.js
    ```
-3. Navigate to the **kumachi** folder and start the web app by running:
+4. Navigate to the **kumachi** folder and start the web app by running:
    ```
    npm run serve
    ```
-4. The web app will be running at http://localhost:8080
+5. The web app will be running at http://localhost:8080
 
 ## Background
 Kumachi is a web application that is designed to market and build the online presence of a local coffee shop located in Pandacaqui, Mexico, Pampanga. Our goal is to help Kumachi increase its marketing reach and build their brand identity by creating a digital platform that showcases their unique ambiance and offerings. The web app will feature a user-friendly interface that engages with users, allowing them to explore the menu, add items to their cart, and order for pick-up.
