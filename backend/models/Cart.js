@@ -3,19 +3,19 @@ const Schema = mongoose.Schema;
 let cartSchema = new Schema(
   {
     _id: {
-        type: Number
+      type: Number,
     },
     name: {
-        type: String
+      type: String,
     },
     price: {
-        type: Number
+      type: Number,
     },
     image: {
-      type: String
+      type: String,
     },
     quantity: {
-        type: Number
+      type: Number,
     },
   },
   {

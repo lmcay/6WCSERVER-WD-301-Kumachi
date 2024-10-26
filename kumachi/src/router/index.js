@@ -1,62 +1,65 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../components/Home.vue'
-import Products from '../components/Products.vue'
-import Featured from '../components/Featured.vue'
-import Contact from '../components/Contact.vue'
-import Confirmation from '@/components/Confirmation.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../components/Home.vue";
+import Products from "../components/Products.vue";
+import Featured from "../components/Featured.vue";
+import Contact from "../components/Contact.vue";
+import Contacted from "@/components/Contacted.vue";
+import Confirmation from "@/components/Confirmation.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
+    path: "/",
+    name: "home",
     component: Home,
-    meta: { title: `Kumachi Coffee and Pastries | Home` }
+    meta: { title: `Kumachi Coffee and Pastries | Home` },
   },
   {
-    path: '/products',
-    name: 'products',
+    path: "/products",
+    name: "products",
     component: Products,
-    meta: {title: `Kumachi Coffee and Pastries | Products`}
-
+    meta: { title: `Kumachi Coffee and Pastries | Products` },
   },
   {
-    path: '/featured',
-    name: 'featured',
+    path: "/featured",
+    name: "featured",
     component: Featured,
-    meta: {title: `Kumachi Coffee and Pastries | Featured`}
+    meta: { title: `Kumachi Coffee and Pastries | Featured` },
   },
   {
-    path: '/contact',
-    name: 'contact',
+    path: "/contact",
+    name: "contact",
     component: Contact,
-    meta: {title: `Kumachi Coffee and Pastries | Contact`}
+    meta: { title: `Kumachi Coffee and Pastries | Contact` },
   },
   {
-    path: '/confirmation',
-    name: 'confirmation',
+    path: "/confirmation",
+    name: "confirmation",
     component: Confirmation,
-    meta: {title: `Kumachi Coffee and Pastries | Order Confirmation`}
-  }
-]
+    meta: { title: `Kumachi Coffee and Pastries | Order Confirmation` },
+  },
+  {
+    path: "/contacted",
+    name: "Contacted",
+    component: Contacted,
+    meta: { title: `Kumachi Coffee and Pastries | Successfully Contacted` },
+  },
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
   routes,
   scrollBehavior() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   },
-  
-})
+});
 
 router.beforeEach((to, from, next) => {
-  document.title = 
-  to.meta.title || "Kumachi Coffee and Pastries";
+  document.title = to.meta.title || "Kumachi Coffee and Pastries";
   next();
 });
 
-
-export default router
+export default router;

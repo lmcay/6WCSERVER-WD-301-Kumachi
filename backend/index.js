@@ -16,6 +16,7 @@ mongoose
     console.error("Error connecting to mongo", err.reason);
   });
 const cartAPI = require("../backend/routes/cart.route");
+const emailAPI = require("../backend/routes/contact.route");
 
 const app = express();
 app.use(bodyParser.json());
@@ -27,6 +28,8 @@ app.use(
 app.use(cors());
 // API
 app.use("/api", cartAPI);
+app.use("/email", emailAPI);
+
 // Create port
 const port = process.env.PORT || 4000;
 const server = app.listen(port, () => {

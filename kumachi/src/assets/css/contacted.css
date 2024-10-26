@@ -1,0 +1,32 @@
+h1 {
+  color: var(--primary-color);
+}
+
+.contacted__message__container {
+  width: 80%;
+  margin: 4rem auto;
+}
+
+.bear-coffee {
+  max-width: 200px;
+}
+
+.latest__products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.latest__products img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .latest__products img {
+    height: 150px;
+  }
+}
